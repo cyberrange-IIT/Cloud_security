@@ -43,7 +43,7 @@ aws sts assume-role --role-arn arn:aws:iam::123456789012:role/AdminRole --role-s
 ```
  #Risk: Complete takeover of AWS environment.
 ## Overlapping Trust Policies via ARNs
- #Attackers can create malicious roles and manipulate trust policies:
+ - Attackers can create malicious roles and manipulate trust policies:
  ```json
  {
   "Effect": "Allow",
@@ -54,7 +54,7 @@ aws sts assume-role --role-arn arn:aws:iam::123456789012:role/AdminRole --role-s
 }
 
  ```
- #Risk: Unauthorized access across accounts.
+ - Risk: Unauthorized access across accounts.
 
 
 ## Blue Team Detection and Defense
