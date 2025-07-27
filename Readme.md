@@ -4,15 +4,12 @@ This repository is a structured collection of cloud security knowledge across AW
 
 ## Contents
 
-| Level        | File                    | Description                                                      |
-|--------------|-------------------------|------------------------------------------------------------------|
-| Beginner     | Cloud-Basics.md         | Cloud models, shared responsibility, asset exposure              |
-| Intermediate | Cloud-SSRF.md           | SSRF across AWS (IMDS), Azure (MSI), GCP (Metadata)              |
-| Intermediate | Cloud-IAM.md            | Identity and access abuse, role misconfigurations                |
-| Intermediate | Cloud-LLM.md            | Prompt injection, metadata token exfiltration via chatbot        |
-| Intermediate | Cloud-Misconfig.md      | Common open services, insecure storage, and excessive access     |
-| Advanced     | Cloud-Monitoring.md     | Logs, alerts, and native detections across all three platforms   |
-| Expert       | Cloud-Advanced.md       | Cross-cloud pivoting, combined attack chains, detection rules    |
+| File                    | Description                                                      |
+|-------------------------|------------------------------------------------------------------|
+| SSRF.md                 | SSRF across AWS (IMDS), Azure (MSI), GCP (Metadata)              |
+| IAM.md                  | Identity and access abuse, role misconfigurations                |
+| LLM.md                  | Prompt injection, metadata token exfiltration via chatbot        |
+
 
 ## Topics Covered
 
@@ -37,13 +34,6 @@ This repository is a structured collection of cloud security knowledge across AW
 - Integration risks with Lambda, Azure Functions, Cloud Functions
 - Hardening techniques and model filtering
 
-### Common Misconfigurations
-
-- Public buckets (S3, Blob, GCS)
-- Exposed VMs with open ports
-- Overly permissive IAM/service roles
-- Insecure CI/CD workflows and secrets exposure
-- Lack of logging and monitoring
 
 ### Detection and Monitoring
 
@@ -52,13 +42,7 @@ This repository is a structured collection of cloud security knowledge across AW
 - GCP: Audit Logs, SCC, Event Threat Detection
 - Recommended log sources and alerts for cloud threats
 
-### Advanced Topics
 
-- Cross-cloud attack chains
-- Identity federation abuse
-- Chained SSRF → token → privilege escalation paths
-- Real-world breach mappings and threat modeling
-- Custom detections using native and third-party tools
 
 ## References
 
