@@ -41,7 +41,7 @@ gcloud iam service-accounts impersonate target@project.iam.gserviceaccount.com
 ```bash
 aws sts assume-role --role-arn arn:aws:iam::123456789012:role/AdminRole --role-session-name attackerSession
 ```
- #Risk: Complete takeover of AWS environment.
+ - Risk: Complete takeover of AWS environment.
 ## Overlapping Trust Policies via ARNs
  - Attackers can create malicious roles and manipulate trust policies:
  ```json
